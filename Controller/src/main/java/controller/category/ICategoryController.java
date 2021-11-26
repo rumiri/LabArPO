@@ -1,9 +1,15 @@
 package controller.category;
 
-public interface ICategoryController {
-    void addCategory(int id, String name);
+import data_transfer_object.DtoCategory;
 
-    void updateCategory(int id, String name);
+import java.util.List;
+
+public interface ICategoryController {
+    int addCategory(String name);
+
+    void updateCategory(String name);
 
     void deleteCategory(int id);
+
+    List<DtoCategory> getCategoriesList();
 }

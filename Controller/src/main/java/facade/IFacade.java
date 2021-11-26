@@ -1,6 +1,8 @@
 package facade;
 
+import data_transfer_object.DtoCategory;
 import data_transfer_object.DtoNews;
+import entity.category.ICategory;
 import entity.news.INews;
 
 import java.util.List;
@@ -10,17 +12,17 @@ public interface IFacade {
 
     void addNews(INews news);
 
-    void updateNews();
+    void updateNews(int id, INews news);
 
-    void deleteNews();
+    void deleteNews(int id);
 
-    List<?> getNewsList();
+    List<DtoNews> getNewsList();
 
-    void addCategory(String name);
+    void addCategory(ICategory category);
 
-    void updateCategory();
+    void updateCategory(int id, INews news);
 
-    void deleteCategory();
+    void deleteCategory(int id);
 
-    List<?> getCategoriesList();
+    List<DtoCategory> getCategoriesList();
 }

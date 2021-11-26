@@ -13,6 +13,16 @@ public class DoNews extends Entity {
     private String author;
     private String text;
 
+    public DoNews(int id, String title, Date date, int categoryId, String text, String author) {
+        super();
+        this.id = id;
+        this.title = title;
+        this.date = date;
+        this.categoryId = categoryId;
+        this.text = text;
+        this.author = author;
+    }
+
     @Override
     public int getId() {
         return id;

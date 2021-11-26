@@ -6,6 +6,12 @@ public class Category extends Entity implements ICategory{
     private int id;
     private String name;
 
+    public Category(int id, String name) {
+        super();
+        this.name = name;
+        this.id = id;
+    }
+
     @Override
     public int getId() {
         return id;

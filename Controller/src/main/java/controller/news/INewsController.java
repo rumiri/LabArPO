@@ -14,7 +14,7 @@ public interface INewsController {
 
     void deleteNews(int id);
 
-    List<DtoNews> getAllNews();
+    List<DtoNews> getNewsList();
 
     List<DtoNews> getFilteredNewsList(String category);
 }

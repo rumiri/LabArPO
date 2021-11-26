@@ -7,6 +7,12 @@ public class DoCategory extends Entity {
     private int id;
     private String name;
 
+    public DoCategory(int id, String name) {
+        super();
+        this.id = id;
+        this.name = name;
+    }
+
     @Override
     public int getId() {
         return id;
